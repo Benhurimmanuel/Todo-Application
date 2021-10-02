@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <% templateObject.toDoItems.forEach(function(todo) { %>
+            <div class="card col-3 m-4">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= todo.title %>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">created At</h6>
+                    <p class="card-text">
+                        <%= todo.toDoDetail %>
+                    </p>
+                    <div class=" d-flex justify-content-between">
+                        <a href="<%=todo.id %>  " class="card-link " id=<%=todo.id %>>View</a>
+                        <a href="<%=todo.id %>" class="card-link" id=<%=todo.id %>>Remove</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+    </div>
+</div>

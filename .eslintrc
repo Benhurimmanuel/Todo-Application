@@ -1,0 +1,9 @@
+{
+    "extends": "aw",
+    "rules": {
+        "linebreak-style": [
+            "error",
+            "windows"
+        ]
+    }
+}

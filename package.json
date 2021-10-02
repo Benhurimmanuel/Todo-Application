@@ -1,0 +1,48 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "Simple todo app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js",
+    "deploy-gcloud": " gcloud app deploy app.yaml --project aw-platform-playground --no-promote --version 1",
+    "test": "jest",
+    "lint": "eslint ./ --fix"
+  },
+  "author": "Benhur Immanuel",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/connect-firestore": "^2.0.2",
+    "@google-cloud/firestore": "^4.14.1",
+    "@google-cloud/logging-bunyan": "^3.1.0",
+    "bunyan": "^1.8.15",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "eslint-config-aw": "^1.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "googleapis": "^82.0.0",
+    "joi": "^17.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3",
+    "node-fetch": "^2.6.1",
+    "uuid": "^8.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenhurBenjamin/todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BenhurBenjamin/todo/issues"
+  },
+  "homepage": "https://github.com/BenhurBenjamin/todo#readme",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "nodemon": "^2.0.12",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}

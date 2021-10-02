@@ -1,0 +1,17 @@
+runtime: nodejs14 # or another supported version
+
+instance_class: F1
+
+handlers:
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
+
+env_variables:
+  DB : mongodb+srv://Benhur:Benhur@todoapp.mc6b5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+  GOOGLE_CLIENT_ID: 264649846882-v88p3f88j6bpbehsaov8fu60c9tv6b36.apps.googleusercontent.com
+  GOOGLE_CLIENT_SECRET: LpatkRS3CywibM0IWvAR35ry   
+  SERVER_ROOT_URI: https://todobackendapplication.herokuapp.com/auth/google/callback
+  SECRET : todoappstructured
